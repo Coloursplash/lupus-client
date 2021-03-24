@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "lupus-client",
+  "version": "${version}",
+
+  "name": "Lupus Client",
+  "description": "Feature-rich utility mod for anarchy servers.",
+  "authors": [
+    "Coloursplash"
+  ],
+  "contact": {
+    "issues": "https://github.com/Coloursplash/lupus-client/issues",
+    "sources": "https://github.com/Coloursplash/lupus-client"
+  },
+
+  "license": "GPL-3.0",
+  "icon": "assets/lupus-client/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "coloursplash.lupusclient.LupusClient"
+    ]
+  },
+  "mixins": [
+    "lupus-client.mixins.json",
+    "lupus-client-sodium.mixins.json"
+  ],
+
+  "accessWidener": "lupus-client.accesswidener",
+
+  "custom": {
+    "lupus-client:devbuild": "@devbuild@"
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

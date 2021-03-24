@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "package": "coloursplash.lupusclient.mixin.sodium",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "SodiumBlockOcculsionCacheMixin",
+    "SodiumBlockRendererMixin",
+    "SodiumFluidRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
